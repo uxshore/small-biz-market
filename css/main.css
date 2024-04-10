@@ -64,92 +64,168 @@
         overflow-x: hidden;
     }
 
+    .navdesktop {
+        height: 11vh;
+        width: 100%;
+        background-color: #FF7A3F;
+        display: flex;
+        flex-direction: row;
+        overflow-y: hidden;
+        position: fixed;
+        z-index: 1;
+    }
+
+    .desktopnava1 {
+        color: black;
+    }
+
     .navmobile {
-        visibility: hidden;
-        height: 0px;
         width: 0px;
+        height: 0px;
+        visibility: hidden;
     }
 
     header {
-        height: 10vh;
+        height: 0vh;
         overflow-y: hidden;
     }
 
-    .navdesktop {
-        width: 100%;
-        height: 10.5vh;
-        background-color: rgba(242, 217, 141, 0.3);
-        display: inline-block;
-        flex-direction: row;
-        justify-content: center;
-        overflow-y: hidden;
+    .mainnavmobile {
+        width: 0px;
+        height: 0px;
+        visibility: hidden;
     }
 
-    .desktopnavlinks {
-        display: flex;
-        justify-content: center;
-        margin-right: 10vh;
+    .mobilenavlinks {
+        margin: 2.5vh;
+        float: inline-end;
     }
 
-    .desktoplogodiv {
+    .mobilelogodiv {
         float:inline-start;
         padding: 0vh 0vh 0vh 3vh;
-        height: 10vh;
-        overflow-y: hidden;
     }
 
     .desktoplogo {
-        width: 70px;
+        width: 75px;
+        padding-top: 1vh;
+        /* border-radius: 40px; */
     }
 
-    .desktopnavul {
+    .mobilenavul {
         display: flex;
         flex-direction: row;
     }
 
-    .mobilelinksul {
-        visibility: hidden;
-        width: 0%;
-        height: 0vh;
+    #hamBtn {
+        width: 50px;
+        height: 50px;
+        border: none;
+        background-color: none;
+        background: none;
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
     }
 
-    .mobilelinksul1 {
-        visibility: hidden;
-        width: 0%;
-        height: 0vh;
+    #ham {
+        width: 70px;
+        /* background-color: #DAF3FA; */
+        padding: 1vh;
     }
 
-    .desktopnava {
+    .mobilenava {
         text-decoration: none;
         padding: 4vh 4vh 3.31vh 4vh;
         color: #037F8C;
     }
 
-    .desktopnava:hover {
-        animation: desktopnavlinks 0.75s forwards;
-    }
-
-    .desktopnava1 {
+    /* .mobilenava1 {
         text-decoration: none;
         padding: 4vh 4vh 3.31vh 4vh;
         background-color: #F2c299;
         color: #037F8C;
+    } */
+
+    .mobilelinksa  {
+        text-decoration: none;
+        padding: 5vh 5vh 5vh 5vh;
+        /* height: 10vh; */
+        text-align: center;
+        color: black;
+        display: flex;
+        justify-content: center;
+        vertical-align: baseline;
+        font-family: chicle, helvetica;
+        letter-spacing: 3px;
+    }
+
+    .galleryimg {
+        margin-top: 5vh;
+        width: 700px;
+    }
+
+    .mobilelinksul {
+        visibility: hidden;
+        width: 100%;
+        height: 0vh;
+        z-index: 1;
+        animation: mobilenav1 0.5s forwards;
+    }
+
+    .mobilelinksul1 {
+        visibility: visible;
+        width: 100%;
+        /* height: 50vh; */
+        background-color: #C5DBE3;
+        z-index: 1;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        margin-top: 11vh;
+        animation: mobilenav 0.5s forwards;
     }
 
     main {
-        background-color: #048ABF;
+        /* background-color: #048ABF; */
         /* height: 100vh; */
-        /* margin-top: 10vh; */
+        margin-top: 11vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    .formmain {
+        /* background-color: #048ABF; */
+        /* height: 100vh; */
+        margin-top: 15vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        align-content: center;
+    }
+
+    h1 {
+        font-family: chicle, Ariel;
+        letter-spacing: 3px;
+    }
+
+    h2 {
+        font-family: chicle, Ariel;
+        letter-spacing: 3px;
     }
 
     .first {
-        width: 175vh;
-        background-color: rgba(255, 255, 255, 0.25);
+        /* width: 45vh; */
+        background-color: #ADC3CB;
         border-radius: 25px;
+        width: 44vh;
         display: flex;
         justify-content: center;
         padding: 5vh 0vh 5vh 0vh;
@@ -157,14 +233,15 @@
         text-align: center;
         margin-top: 4vh;
         margin-bottom: 4vh;
-        color: white;
+        /* color: white; */
         font-family: josefin, helvetica;
     }
 
     .second {
-        width: 175vh;
-        background-color: rgba(255, 255, 255, 0.5);
+        /* width: 45vh; */
+        background-color: #ADC3CB;
         border-radius: 25px;
+        width: 95%;
         display: flex;
         justify-content: center;
         padding: 5vh 0vh 5vh 0vh;
@@ -172,14 +249,14 @@
         text-align: center;
         margin-top: 4vh;
         margin-bottom: 4vh;
-        color: white;
+        /* color: white; */
         font-family: josefin, helvetica;
     }
 
     .examplesBtn {
         padding: 2vh;
-        margin-right: 60vh;
-        margin-left: 60vh;
+        margin-right: 2vh;
+        margin-left: 2vh;
         border-radius: 25px;
         background-color: #F2D98D;
         text-decoration: none;
@@ -187,24 +264,19 @@
         font-family: josefin, helvetica;
     }
 
-    .socialdiv {
-        display: flex;
-        flex-direction: row;
-        justify-content: center;
-    }
-
-    .socialimg {
-        width: 40px;
-        padding: 1vh;
-        border-radius: 25px;
-    }
-
     .form {
-        height: 70vh;
+        /* height: 70vh; */
+        margin-top: 5vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
         font-family: josefin, helvetica;
+    }
+
+    .form1 {
+        visibility: hidden;
+        height: 0px;
+        width: 0px;
     }
     
     .formp {
@@ -215,18 +287,30 @@
         flex-wrap: wrap;
     }
 
+    .infop {
+        margin: 1vh 2vh 1vh 2vh;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
     label {
         font-family: josefin, helvetica;
+        width: 25vh;
+        align-self: center;
     }
 
     .input {
         font-family: josefin, helvetica;
         height: 4vh;
+        width: 30vh;
         padding-left: 1.25vh;
+        /* margin-left: 1vh; */
         border-radius: 25px;
-        border: none;
-        margin-left: 15vh;
-        margin-right: 15vh;
+        align-self: center;
+        margin-top: 1vh;
+        border: 1px solid #ADC3CB;
     }
 
     .inputtext {
@@ -235,9 +319,7 @@
         padding-left: 1.5vh;
         padding-top: 1.5vh;
         font-family: josefin, helvetica;
-        border: none;
-        margin-left: 15vh;
-        margin-right: 15vh;
+        border: 1px solid #ADC3CB;
     }
 
     .submitbtn {
@@ -246,11 +328,32 @@
         font-family: josefin, helvetica;
         color: white;
         border: none;
-        border-radius: 15px;
-        padding-top: 1vh;
-        padding-bottom: 1vh;
-        margin-left: 40vh;
-        margin-right: 40vh;
+        width: 30vh;
+        align-self: center;
+        border-radius: 25px;
+        height: 4vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+    }
+
+    .morebtn {
+        background-color: #F2884B;
+        background: #F2884B;
+        font-family: josefin, helvetica;
+        color: white;
+        border: none;
+        width: 20vh;
+        align-self: center;
+        border-radius: 25px;
+        height: 4vh;
+        margin-left: 4vh;
+        margin-right: 4vh;
+        font-size: 2rem;
+    }
+
+    .mainp {
+        margin-left: 1vh;
+        margin-right: 1vh;
     }
 
     .examplea {
@@ -279,7 +382,7 @@
     }
 
     .exampleimg {
-        width: 45vh;
+        width: 20vh;
         border-radius: 15px;
     }
 
@@ -288,12 +391,35 @@
         color: white;
     }
 
+    .socialdiv {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .socialimg {
+        width: 40px;
+        padding: 1vh;
+        border-radius: 25px;
+    }
+
+    .terms {
+        font-family: helvetica, ariel;
+        padding-right: 1vh;
+        padding-left: 1vh;
+    }
+
     footer {
         width: 100%;
         height: 5vh;
-        background-color: #037F8C;
+        background-color: #ADC3CB;
         color: white;
         text-align: center;
+        align-items: center;
+    }
+
+    .footerp {
+        margin-top: 2vh;
     }
 
 }
