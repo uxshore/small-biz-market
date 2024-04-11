@@ -65,18 +65,63 @@
     }
 
     .navdesktop {
-        height: 11vh;
         width: 100%;
+        height: 11vh;
         background-color: #FF7A3F;
-        display: flex;
+        display: inline-block;
         flex-direction: row;
+        justify-content: center;
         overflow-y: hidden;
         position: fixed;
         z-index: 1;
     }
 
-    .desktopnava1 {
+    .desktopnavlinks {
+        display: flex;
+        justify-content: center;
+        margin-right: 7.5vh;
+    }
+
+    .desktopnavul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .mobilelinksul {
+        visibility: hidden;
+        width: 0%;
+        height: 0vh;
+    }
+
+    .mobilelinksul1 {
+        visibility: hidden;
+        width: 0%;
+        height: 0vh;
+    }
+
+    .desktopnava {
+        text-decoration: none;
+        padding: 4vh 4vh 3.31vh 4vh;
         color: black;
+    }
+
+    .desktopnava:hover {
+        animation: desktopnavlinks 0.75s forwards;
+    }
+
+    .desktopnava1 {
+        text-decoration: none;
+        padding: 4vh 4vh 4.4vh 4vh;
+        background-color: #C5DBE3;
+        color: black;
+        /* height: 11vh; */
+    }
+
+    .desktoplogodiv {
+        float:inline-start;
+        padding: 0vh 0vh 0vh 0vh;
+        height: 11vh;
+        overflow-y: hidden;
     }
 
     .navmobile {
@@ -107,8 +152,9 @@
     }
 
     .desktoplogo {
-        width: 75px;
-        padding-top: 1vh;
+        width: 11vh;
+        /* padding-top: 1vh; */
+        overflow-y: hidden;
         /* border-radius: 40px; */
     }
 
@@ -158,6 +204,12 @@
         vertical-align: baseline;
         font-family: chicle, helvetica;
         letter-spacing: 3px;
+    }
+
+    .hidden {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
     }
 
     .galleryimg {
@@ -231,10 +283,16 @@
         padding: 5vh 0vh 5vh 0vh;
         flex-direction: column;
         text-align: center;
-        margin-top: 4vh;
-        margin-bottom: 4vh;
+        margin: 4vh 4vh 2.5vh 4vh;
         /* color: white; */
         font-family: josefin, helvetica;
+
+    }
+
+    .formmain {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .second {
