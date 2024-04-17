@@ -26,7 +26,7 @@ function ham() {
     home.textContent = "Home";
     gallery.textContent = "Past Markets";
 
-    home.setAttribute("href", "https://smallbizmarket.netlify.app/");
+    home.setAttribute("href", "https://uxshore-draft-smallbizmarket.netlify.app/");
     gallery.setAttribute("href", "/html/gallery.html");
 
     home.className = "mobilelinksa";
